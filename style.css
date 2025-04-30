@@ -105,3 +105,25 @@ body {
 .content_subparagraph {
   margin-inline-start: 50px;
 }
+
+@media (width <= 768px) {
+  .basic {
+    max-width: 1440px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* border: 1px solid white; */
+    margin: 20px;
+    padding: 20px;
+    color: rgb(162, 207, 247);
+    font-weight: 100;
+  }
+
+  .one_stage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  }
