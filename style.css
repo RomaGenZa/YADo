@@ -106,7 +106,7 @@ body {
   margin-inline-start: 50px;
 }
 
-@media (width <= 768px) {
+@media (width <= 1080px) {
   .basic {
     max-width: 1440px;
     min-height: 300px;
