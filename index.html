@@ -44,26 +44,26 @@
         </li>
         <li class="one_stage_p">
           При погрузки обращай внимание на посылки, на предмет повреждения.<br/>
-          Если заказ повреждён, выложи в чат информацию с номером заказа и фото, далее:
+          Если заказ повреждён, выложи в чат информацию с номером заказа и фото, а далее
           <ul class="content_subparagraph">
             <li>если возможно реанимируй</li>
             <li>отнеси на склад</li>
           </ul>
-          В противном случае оплатишь заказ, т.к. будет считаться, что ты повредил его в дороге.
+          <p>В противном случае оплатишь заказ, т.к. будет считаться, что ты повредил его в дороге.</p>
         </li>
       </ol>
       <p class="one_stage"
         ><strong class="one_stage_string">2 Этап</strong> Развоз заказов
       </p>
       <ol class="one_stage_content">
-        <li class="one_stage_p">Все ПВЗ требуется развести до <strong style="color: rgb(233, 105, 105);">18:00</strong></li>
+        <li class="one_stage_p">Все ПВЗ требуется развести до <strong style="color: var(--important);">18:00</strong></li>
         <li class="one_stage_p">
           Если что-то случилось, что замедлит развоз (ДТП, поломка и т.д.)
           отпишись в чат СРК и чат проекта – «Задержка на маршруте (приложи фото
           если требуется)».
         </li>
         <li class="one_stage_p">Если по приезду на ПВЗ он закрыт:</li>
-          <ul class="content_subparagraph">
+          <ul id="two_six" class="content_subparagraph">
             <li>можешь позвонить сам на ПВЗ.</li>
             <li>сообщи в чат СРК, приложи фото закрытого ПВЗ.</li>
             <li>
@@ -108,7 +108,8 @@
         </li>
       </ol>
       <p class="one_stage">
-        <strong class="one_stage_string">3 этап</strong> Сдача возвратов / ДРОП</p>
+        <strong class="one_stage_string">3 этап</strong> Сдача возвратов / ДРОП
+      </p>
       <ol class="one_stage_content one_stage_p">
         <li>Сдай возвраты и ДРОПы если имеются.</li>
         <li>Сдай акты на ДРОПы, на третий склад, остальные акты в окно СРК.</li>
@@ -120,8 +121,42 @@
         Закрыть аренду в соответствующем приложении и выйти из приложения.
       </p>
     </main>
+    <section id="mem" class="hidden">
+      <h3 class="head_memo">памятка</h3>
+      <p class="one_stage">Мойка авто</p>
+      <ol class="one_stage_content one_stage_p">
+        <li>Фото с 4 сторон грязного авто</li>
+        <li>Фото суммы денежных средств на терминале мойки</li>
+        <li>Фото с 4 сторон чистого авто</li>
+        <li>Фото чека</li>
+        <p class="heading_memo_info">В сообщении указать:</p>
+        <p>ФИО, дата, сумма, «мойка».</p>
+        <p>Отправить бригадиру или в чат соответствующему логисту.</p>
+      </ol>
+      <p class="one_stage">Платная трасса</p>
+      <ol class="one_stage_content one_stage_p">
+        <li>Фото чека</li>
+        <p class="heading_memo_info">В сообщении указать:</p>
+        <p>ФИО, дата, сумма, «платка».</p>
+        <p>Отправить бригадиру или в чат соответствующему логисту.</p>
+        <p><strong style="color: var(--important);">Помни</strong> платка в городе по Изыскателей <strong style="color: var(--important);">не возмещается!!!</strong></p>
+      </ol>
+      <p class="one_stage">Заправка авто топливом</p>
+      <div class="one_stage_content one_stage_p">
+        <p>Транзит –ДИЗЕЛЬ,</p>
+        <p>Солерс –ДИЗЕЛЬ,</p>
+        <p>Газель – АИ-92.</p>
+        <ul class="heading_memo_info">В соответствующем приложении требуется выбрать «Заправить авто»
+          <li style="margin-top: 15px;">выбрать заправку на карте</li>
+          <li>выбрать колонку</li>
+          <li>после подтверждения вставить пистолет в бак </li>
+          <li>после завершения заправки подтвердить в приложении «Едем дальше»</li>
+        </ul>
+      </div>
+    </section>
     <div class="container">
       <button class="btn_memo">Памятка</button>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

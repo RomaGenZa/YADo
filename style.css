@@ -33,7 +33,7 @@ body {
 .logo {
   width: 150px;
   height: 25px;
-  background-color: rgb(229, 229, 14);
+  background-color: var(--heading-color);
   border-radius: 11px;
 }
 
@@ -43,7 +43,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  color: aliceblue;
+  color: var(--info-text);
   margin-block-start: 10px;
 }
 
@@ -61,7 +61,7 @@ body {
   gap: 15px;
   margin: 20px;
   padding: 20px;
-  color: rgb(162, 207, 247);
+  color: var(--text);
   font-weight: 100;
 }
 
@@ -79,7 +79,7 @@ body {
 .one_stage_string {
   text-decoration: underline;
   padding-bottom: 10px;
-  color: rgb(224, 243, 50);
+  color: var(--heading-color);
 }
 
 .one_stage_content {
@@ -90,19 +90,58 @@ body {
 
 .one_stage_content,
 .one_stage {
-  border-block-end: 1px solid white;
+  border-block-end: 1px solid var(--info-text);
   padding-block-end: 15px;
+}
+
+.info_click {
+  border: 1px solid var(--info-text); 
+  border-radius: 10px;
+  padding: 3px 5px;
+  color: var(--info-text);
+  cursor: pointer;
 }
 
 .info_drop {
   display: flex;
-
   margin: 20px;
   color: rgb(220, 189, 248);
 }
 
 .content_subparagraph {
-  margin-inline-start: 50px;
+  margin-inline-start: 30px;
+}
+
+.memo {
+  max-width: 1440px;
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+  margin: 0 20px 20px 20px;
+  padding: 0 20px 20px 20px;
+  color: var(--text);
+  font-weight: 100;
+}
+
+.hidden {
+  display: none;
+}
+
+.head_memo {
+  display: flex;
+  justify-content: center;
+  color: var(--heading-color);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-transform: uppercase;
+  margin-block-start: 30px;
+}
+
+.heading_memo_info {
+  margin-block-start: 20px; 
+  text-decoration: underline; 
+  padding-bottom: 5px;
 }
 
 .container {
@@ -113,7 +152,7 @@ body {
 }
 
 .btn_memo {
-  width: 15vw;
+  width: 18vw;
   height: 5vh;
   border-radius: 15px;
   box-shadow: 0 0 20px 2px rgb(151, 227, 245);
@@ -138,7 +177,8 @@ body {
     padding: 0 10vw 2vh 10vw;
   }
 
-  .basic {
+  .basic,
+  .memo {
     max-width: 768px;
     min-height: 300px;
     display: flex;
@@ -146,7 +186,7 @@ body {
     gap: 15px;
     margin: 0;
     padding: 10px;
-    color: rgb(162, 207, 247);
+    color: var(--text);
     font-weight: 100;
   }
 
@@ -161,8 +201,12 @@ body {
     padding: 0 10px 0 10px;
   }
 
-  .btn_memo{
+  .btn_memo {
     font-size: 60%;
+  }
+
+  .memo {
+
   }
 
 }
