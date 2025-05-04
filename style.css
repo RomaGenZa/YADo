@@ -12,14 +12,13 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-image: url(./images/cover-image-dark.png);
-  font-family: 'HeliosExtC';
+  font-family: "HeliosExtC";
 }
 
 .body {
   display: flex;
   flex-direction: column;
 }
-
 
 .header {
   max-width: 1440px;
@@ -28,7 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-  font-family: 'HeliosExtC';
+  font-family: "HeliosExtC";
 }
 
 .logo {
@@ -81,6 +80,7 @@ body {
 .one_stage_string {
   text-decoration: underline;
   padding-bottom: 10px;
+  color: rgb(224, 243, 50);
 }
 
 .one_stage_content {
@@ -106,14 +106,40 @@ body {
   margin-inline-start: 50px;
 }
 
-@media (width <= 1080px) {
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 5px 60px 20px 10px;
+}
+
+.btn_memo {
+  width: 15vw;
+  height: 5vh;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 2px rgb(151, 227, 245);
+  font-family: "HeliosExtC";
+  border: 3px outset rgb(5, 5, 110);
+  background-color: rgb(152, 191, 238);
+  font-weight: 900;
+  font-size: 18px;
+  color: rgb(0, 36, 103);
+}
+
+.btn_memo:active {
+  background: rgb(60, 157, 242);
+  box-shadow: none;
+  box-shadow: 0 0 10px 2px rgb(151, 227, 245);
+  border: 2px outset rgb(37, 37, 226);
+}
+
+@media (width <= 768px) {
   .basic {
-    max-width: 1440px;
+    max-width: 768px;
     min-height: 300px;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    /* border: 1px solid white; */
     margin: 20px;
     padding: 20px;
     color: rgb(162, 207, 247);
@@ -122,8 +148,14 @@ body {
 
   .one_stage {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    flex-direction: row;
+    justify-content: flex-start;
   }
+
+  .one_stage_string {
+    margin-left: 15px;
+    padding: 0 10px 0 10px;
+  }
+}
+
+
