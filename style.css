@@ -140,8 +140,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin: 20px;
-    padding: 20px;
+    margin: 0;
+    padding: 10px;
     color: rgb(162, 207, 247);
     font-weight: 100;
   }
