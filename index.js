@@ -3,4 +3,5 @@ const infoConteiner = document.querySelector('#mem');
 
 infoString.addEventListener('click', () => {
   infoConteiner.classList.toggle('memo');
+  infoConteiner.classList.toggle('hidden');
 })
