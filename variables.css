@@ -1,6 +1,11 @@
 :root {
-  --info-text: aliceblue;
-  --heading-color: rgb(255, 225, 0);
-  --text: rgb(162, 207, 247);
-  --important: rgb(233, 105, 105)
+  --info-text: rgb(0, 0, 0);
+  --heading-color: rgb(255, 204, 0);
+  --text: rgb(0, 0, 0);
+  --important: rgb(252, 63, 29);
+  --shadow-text: 
+    0 0 2px #000,
+    0 0 10px #000,
+    2px 2px 5px #000,
+    2px 2px 5px #000;
 }

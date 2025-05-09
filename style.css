@@ -11,7 +11,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url(./images/cover-image-dark.png);
+  background-image: url(./images/kraft.jpg);
   font-family: "HeliosExtC";
 }
 
@@ -33,7 +33,6 @@ body {
 .logo {
   width: 150px;
   height: 25px;
-  background-color: var(--heading-color);
   border-radius: 11px;
 }
 
@@ -48,8 +47,8 @@ body {
 }
 
 .head {
-  margin: auto;
-  color: var(--heading-color);
+  margin: 0 0 20px 5vw;
+  color: var(--text);
 }
 
 .basic {
@@ -74,12 +73,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 18px;
 }
 
 .one_stage_string {
-  text-decoration: underline;
   padding-bottom: 10px;
   color: var(--heading-color);
+  font-weight: 900;
+  text-shadow: var(--shadow-text);
+  position: relative;
 }
 
 .one_stage_content {
@@ -90,8 +92,14 @@ body {
 
 .one_stage_content,
 .one_stage {
-  border-block-end: 1px solid var(--info-text);
+  border-block-end: 3px solid rgb(252, 63, 29);
   padding-block-end: 15px;
+}
+
+.important_line {
+  color: rgb(0, 0, 0); 
+  font-style: italic;
+  font-weight: 800;
 }
 
 .info_click {
@@ -105,7 +113,7 @@ body {
 .info_drop {
   display: flex;
   margin: 20px;
-  color: rgb(220, 189, 248);
+  color: var(--important);
 }
 
 .content_subparagraph {
@@ -136,6 +144,9 @@ body {
   grid-column-end: 3;
   text-transform: uppercase;
   margin-block-start: 30px;
+  font-weight: 900;
+  text-shadow: var(--shadow-text);
+  letter-spacing: 15px;
 }
 
 .heading_memo_info {
@@ -154,28 +165,23 @@ body {
 .btn_memo {
   width: 18vw;
   height: 5vh;
-  border-radius: 15px;
-  box-shadow: 0 0 20px 2px rgb(151, 227, 245);
+  border-radius: 50px;
+  box-shadow: 0 0 20px 2px rgb(0, 0, 0);
   font-family: "HeliosExtC";
-  border: 3px outset rgb(5, 5, 110);
-  background-color: rgb(152, 191, 238);
+  border: none;
+  background-color: rgb(255, 204, 0);
   font-weight: 900;
   font-size: 100%;
-  color: rgb(0, 36, 103);
+  color: rgb(0, 0, 0);
 }
 
 .btn_memo:active {
-  background: rgb(60, 157, 242);
+  background: rgb(220, 177, 3);
   box-shadow: none;
-  box-shadow: 0 0 10px 2px rgb(151, 227, 245);
-  border: 2px outset rgb(37, 37, 226);
+  box-shadow: 0 0 10px 2px rgb(71, 53, 1);
 }
 
 @media (width <= 768px) {
-
-  .head {
-    padding: 0 10vw 2vh 10vw;
-  }
 
   .basic,
   .memo {
@@ -202,7 +208,7 @@ body {
   }
 
   .btn_memo {
-    font-size: 60%;
+    font-size: 100%;
   }
 }
 
