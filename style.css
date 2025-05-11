@@ -8,7 +8,7 @@ body {
   max-width: 1440px;
   min-width: 360px;
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
   background-attachment: fixed;
   background-image: url(./images/kraft.jpg);
@@ -68,6 +68,42 @@ body {
   padding: 7px;
   line-height: 1.5;
 }
+
+.conteiner_button_info {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  padding: 0 25px;
+}
+
+.button_content_info {
+  background: none;
+  width: 40vw;
+  height: 6vh;
+  border: 1px solid var(--heading-color);
+  box-shadow: 3px 1px 10px 2px black;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 100%;
+  padding: 5px;
+}
+
+.button_content_info:active {
+  background: var(--heading-color);
+  box-shadow: 1px 0 5px 0 black;;
+}
+
+
+.schedule {
+  list-style-type: none;
+  border-bottom: 2px solid var(--important);
+  padding-block-end: 10px;
+  margin-inline-end: 20px;
+}
+/* .button_conyent_info:hover {
+  background: var(--heading-color)
+} */
 
 .one_stage {
   display: flex;
@@ -163,7 +199,7 @@ body {
 }
 
 .btn_memo {
-  width: 18vw;
+  width: 50vw;
   height: 5vh;
   border-radius: 50px;
   box-shadow: 0 0 20px 2px rgb(0, 0, 0);
@@ -208,7 +244,7 @@ body {
   }
 
   .btn_memo {
-    font-size: 60%;
+    font-size: 100%;
   }
 }
 
