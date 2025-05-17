@@ -8,7 +8,6 @@ body {
   max-width: 1440px;
   min-width: 360px;
   background-repeat: no-repeat;
-  /* background-position: center; */
   background-size: cover;
   background-attachment: fixed;
   background-image: url(./images/kraft.jpg);
@@ -71,14 +70,16 @@ body {
 
 .conteiner_button_info {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(2, auto);
   gap: 20px;
   padding: 0 25px;
+  justify-items: center;
+  align-items: center;
 }
 
 .button_content_info {
-  background: none;
+  background: var(--heading-color);
   width: 40vw;
   height: 6vh;
   border: 1px solid var(--heading-color);
@@ -87,23 +88,24 @@ body {
   font-weight: 600;
   font-size: 100%;
   padding: 5px;
+  transition: filter 0.6s;
 }
 
 .button_content_info:active {
-  background: var(--heading-color);
+  filter: brightness(0.7);
   box-shadow: 1px 0 5px 0 black;;
 }
 
-
 .schedule {
   list-style-type: none;
-  border-bottom: 2px solid var(--important);
   padding-block-end: 10px;
   margin-inline-end: 20px;
 }
-/* .button_conyent_info:hover {
-  background: var(--heading-color)
-} */
+
+#availability {
+  padding-inline-start: 20px;
+  grid-area: 2 / 2;
+}
 
 .one_stage {
   display: flex;
@@ -246,6 +248,10 @@ body {
   .btn_memo {
     font-size: 100%;
   }
+}
+
+.paragraf_overrun {
+  padding: 10px 15px;
 }
 
 
