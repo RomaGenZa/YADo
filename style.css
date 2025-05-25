@@ -12,12 +12,12 @@ body {
   background-attachment: fixed;
   background-image: linear-gradient(
     to right,
-    rgb(255, 215, 35) 0%,
+    rgb(246, 235, 185) 0%,
     beige 0%,
-    rgb(252, 214, 77) 0%,
+    rgb(249, 231, 165) 0%,
     rgb(239, 213, 133) 30%,
-    rgb(255, 234, 139) 64%,
-    #f9da6a 100%
+    rgb(252, 240, 185) 64%,
+    #f5edce 100%
   );
   font-family: "HeliosExtC";
 }
