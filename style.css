@@ -10,7 +10,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url(./images/kraft.jpg);
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 215, 35) 0%,
+    beige 0%,
+    rgb(252, 214, 77) 0%,
+    rgb(239, 213, 133) 30%,
+    rgb(255, 234, 139) 64%,
+    #f9da6a 100%
+  );
   font-family: "HeliosExtC";
 }
 
@@ -68,6 +76,14 @@ body {
   line-height: 1.5;
 }
 
+.address {
+  font-size: 15px;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: var(--important);
+  text-shadow: 5px 5px 5px rgb(235, 131, 131);
+}
+
 .conteiner_button_info {
   display: grid;
   grid-template-columns: repeat(2, 50%);
@@ -89,17 +105,19 @@ body {
   font-size: 100%;
   padding: 5px;
   transition: filter 0.6s;
+  cursor: pointer;
 }
 
 .button_content_info:active {
   filter: brightness(0.7);
-  box-shadow: 1px 0 5px 0 black;;
+  box-shadow: 1px 0 5px 0 black;
 }
 
 .schedule {
   list-style-type: none;
   padding-block-end: 10px;
   margin-inline-end: 20px;
+  transition: filter 0.9s;
 }
 
 #availability {
@@ -135,13 +153,13 @@ body {
 }
 
 .important_line {
-  color: rgb(0, 0, 0); 
+  color: rgb(0, 0, 0);
   font-style: italic;
   font-weight: 800;
 }
 
 .info_click {
-  border: 1px solid var(--info-text); 
+  border: 1px solid var(--info-text);
   border-radius: 10px;
   padding: 3px 5px;
   color: var(--info-text);
@@ -181,15 +199,15 @@ body {
   grid-column-start: 1;
   grid-column-end: 3;
   text-transform: uppercase;
-  margin-block-start: 30px;
+  margin: 20px 20px;
   font-weight: 900;
   text-shadow: var(--shadow-text);
   letter-spacing: 15px;
 }
 
 .heading_memo_info {
-  margin-block-start: 20px; 
-  text-decoration: underline; 
+  margin-block-start: 20px;
+  text-decoration: underline;
   padding-bottom: 5px;
 }
 
@@ -211,6 +229,7 @@ body {
   font-weight: 900;
   font-size: 100%;
   color: rgb(0, 0, 0);
+  cursor: pointer;
 }
 
 .btn_memo:active {
@@ -219,8 +238,7 @@ body {
   box-shadow: 0 0 10px 2px rgb(71, 53, 1);
 }
 
-@media (width <= 768px) {
-
+@media (width <=768px) {
   .basic,
   .memo {
     max-width: 768px;
@@ -236,8 +254,8 @@ body {
 
   .one_stage {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .one_stage_string {
@@ -253,5 +271,3 @@ body {
 .paragraf_overrun {
   padding: 10px 15px;
 }
-
-
