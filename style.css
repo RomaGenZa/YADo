@@ -20,6 +20,7 @@ body {
     #f5edce 100%
   );
   font-family: "HeliosExtC";
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .body {
